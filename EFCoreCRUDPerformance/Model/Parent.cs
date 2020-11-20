@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EFCoreCRUDPerformance.Model
 {
-    class Parent
+    public class Parent : Person
     {
     }
 }

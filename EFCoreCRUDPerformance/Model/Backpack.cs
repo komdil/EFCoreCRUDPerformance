@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace EFCoreCRUDPerformance.Model
 {
-    class Backpack
+    public class Backpack
     {
+        public string Logo { get; set; }
+        public string Color { get; set; }
+        public double Weight { get; set; }
+        public virtual List<Student> Students { get; set; }
+        public virtual List<Teacher> Teachers { get; set; }
     }
 }

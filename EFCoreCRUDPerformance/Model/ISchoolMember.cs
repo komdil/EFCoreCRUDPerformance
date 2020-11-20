@@ -4,7 +4,8 @@ using System.Text;
 
 namespace EFCoreCRUDPerformance.Model
 {
-    interface ISchoolMember
+    public interface ISchoolMember
     {
+
     }
 }

@@ -4,7 +4,9 @@ using System.Text;
 
 namespace EFCoreCRUDPerformance.Model
 {
-    class IPerson
+    public interface IPerson
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 }

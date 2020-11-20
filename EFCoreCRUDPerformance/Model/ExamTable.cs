@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace EFCoreCRUDPerformance.Model
 {
-    class ExamTable
+    public class ExamTable
     {
+        public Guid ClassGuid { get; set; }
+        public virtual Class Class { get; set; }
+        public DateTime Time { get; set; }
+        public virtual List<Student> Students { get; set; }
+        public Guid AssistantGuid { get; set; }
+        public virtual Teacher Assistant { get; set; }
     }
 }

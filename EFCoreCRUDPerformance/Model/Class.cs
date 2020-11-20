@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace EFCoreCRUDPerformance.Model
 {
-    class Class
+    public class Class : ModelItem
     {
+        public string Name { get; set; }
+
+        public string ClassType { get; set; }
+
+        public List<TeacherClassLink> TeachersCanTechThisClass { get; set; }
     }
 }

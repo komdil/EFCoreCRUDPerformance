@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EFCoreCRUDPerformance.Model
 {
-    class Mark
+    public class Mark : ModelItem
     {
     }
 }

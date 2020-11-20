@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EFCoreCRUDPerformance.Model
 {
-    class Student
+    public class Student : Account
     {
     }
 }

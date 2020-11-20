@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace EFCoreCRUDPerformance.Model
+﻿namespace EFCoreCRUDPerformance.Model
 {
-    class Room
+    public class Room : ModelItem
     {
+        public string Name { get; set; }
+        public int Floor { get; set; }
+        public virtual Accountant AccountantCabinet { get; set; }
     }
 }

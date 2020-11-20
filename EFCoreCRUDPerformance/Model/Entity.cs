@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EFCoreCRUDPerformance.Model
 {
-    public class Entity
+    public abstract class Entity
     {
         public Guid Guid { get; set; }
     }

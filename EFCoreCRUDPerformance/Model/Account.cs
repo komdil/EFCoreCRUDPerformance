@@ -1,10 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace EFCoreCRUDPerformance.Model
 {
-    class Account
+    public abstract class Account : User, IPerson
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
+        public Guid PrimaryContactGuid { get; set; }
+        public virtual Contact PrimaryContact { get; set; }
+
+        public Guid SecondaryContactGuid { get; set; }
+        public virtual Contact SecondaryContact { get; set; }
+        public virtual List<Payment> Payments { get; set; }
     }
 }
