@@ -7,7 +7,7 @@ namespace EFCoreCRUDPerformance.Model
         public string Logo { get; set; }
         public string Color { get; set; }
         public double Weight { get; set; }
-        public virtual List<Student> Students { get; set; }
-        public virtual List<Teacher> Teachers { get; set; }
+        public virtual Student Student { get; set; }
+        public virtual Teacher Teacher { get; set; }
     }
 }

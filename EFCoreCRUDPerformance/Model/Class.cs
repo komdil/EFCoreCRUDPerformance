@@ -8,6 +8,8 @@ namespace EFCoreCRUDPerformance.Model
 
         public string ClassType { get; set; }
 
-        public List<TeacherClassLink> TeachersCanTechThisClass { get; set; }
+        public virtual List<TeacherClassLink> TeachersCanTechThisClass { get; set; }
+
+        public virtual List<Mark> Marks { get; set; }
     }
 }

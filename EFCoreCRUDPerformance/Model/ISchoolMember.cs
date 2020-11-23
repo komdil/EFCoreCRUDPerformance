@@ -6,6 +6,6 @@ namespace EFCoreCRUDPerformance.Model
 {
     public interface ISchoolMember
     {
-
+        public string ShoolName { get; set; }
     }
 }
