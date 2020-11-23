@@ -6,6 +6,10 @@ namespace EFCoreCRUDPerformance
     {
         static void Main(string[] args)
         {
+            using (ServerContext context = new ServerContext())
+            {
+
+            }
             Console.WriteLine("Hello World!");
         }
     }

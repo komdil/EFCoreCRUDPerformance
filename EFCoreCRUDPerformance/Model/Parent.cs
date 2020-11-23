@@ -4,6 +4,6 @@ namespace EFCoreCRUDPerformance.Model
 {
     public class Parent : Person
     {
-        public virtual List<Student> Childrens { get; set; }
+        public virtual List<Student> Children { get; set; }
     }
 }

@@ -2,10 +2,8 @@
 
 namespace EFCoreCRUDPerformance.Model
 {
-    public class TeacherClassLink
+    public class TeacherClassLink : Entity
     {
-        public Guid Guid { get; set; }
-
         public Guid TeacherGuid { get; set; }
         public virtual Teacher Teacher { get; set; }
 

@@ -13,7 +13,7 @@ namespace EFCoreCRUDPerformance.Model
 
         public string Comment { get; set; }
 
-        public Guid AccountGuid { get; set; }
-        public virtual Accountant Account { get; set; }
+        public Guid AccountantGuid { get; set; }
+        public virtual Accountant Accountant { get; set; }
     }
 }

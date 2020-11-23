@@ -10,9 +10,6 @@ namespace EFCoreCRUDPerformance.Model
 
         public Guid PrimaryContactGuid { get; set; }
         public virtual Contact PrimaryContact { get; set; }
-
-        public Guid SecondaryContactGuid { get; set; }
-        public virtual Contact SecondaryContact { get; set; }
         public virtual List<Payment> Payments { get; set; }
     }
 }
