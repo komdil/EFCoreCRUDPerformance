@@ -21,8 +21,6 @@ namespace EFCoreCRUDPerformance
                     Guid = Guid.NewGuid(),
                     Address = $"Address{i}",
                     PhoneNumber = $"+99299999999{i}",
-                    Title = $"Contact{i}",
-                    Subtitle = $"CONTACT{i}",
                     Country = $"Country{i}",
                 };
 
@@ -127,8 +125,6 @@ namespace EFCoreCRUDPerformance
                 Guid = Guid.NewGuid(),
                 Address = $"Address{i}",
                 PhoneNumber = $"+99299999999{i}",
-                Title = $"Contact{i}",
-                Subtitle = $"CONTACT{i}",
                 Country = $"Country{i}",
             };
             return primaryContact;
@@ -142,7 +138,6 @@ namespace EFCoreCRUDPerformance
                 Guid = Guid.NewGuid(),
                 ClassType = "Cool",
                 Name = $"Class{i}",
-                Title = $"Title{i}",
             };
         }
 
@@ -169,8 +164,6 @@ namespace EFCoreCRUDPerformance
                 Guid = Guid.NewGuid(),
                 Address = $"Address{i}",
                 PhoneNumber = $"+99299999999{i}",
-                Title = $"Contact{i}",
-                Subtitle = $"CONTACT{i}",
                 Country = $"Country{i}",
             };
 

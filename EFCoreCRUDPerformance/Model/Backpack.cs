@@ -6,7 +6,7 @@ namespace EFCoreCRUDPerformance.Model
     {
         public string Logo { get; set; }
         public string Color { get; set; }
-        public double Weight { get; set; }
+        public decimal Weight { get; set; }
 
         public Guid StudentGuid { get; set; }
         public virtual Student Student { get; set; }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EFCoreCRUDPerformance.Model
 {
-    public class Schedule : ModelItem
+    public class Schedule
     {
     }
 }

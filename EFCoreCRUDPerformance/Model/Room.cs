@@ -1,6 +1,6 @@
 ﻿namespace EFCoreCRUDPerformance.Model
 {
-    public class Room : ModelItem
+    public class Room : Entity
     {
         public string Name { get; set; }
         public int Floor { get; set; }

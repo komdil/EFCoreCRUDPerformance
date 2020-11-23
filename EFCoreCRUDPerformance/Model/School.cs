@@ -2,7 +2,7 @@
 
 namespace EFCoreCRUDPerformance.Model
 {
-    public class School : ModelItem
+    public class School
     {
         public string Name { get; set; }
         public virtual List<Student> Students { get; set; }

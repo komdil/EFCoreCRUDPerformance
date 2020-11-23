@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace EFCoreCRUDPerformance.Model
 {
-    public class Contact : ModelItem
+    public class Contact : Entity
     {
         public string Address { get; set; }
 
@@ -13,6 +11,5 @@ namespace EFCoreCRUDPerformance.Model
         public string PhoneNumber { get; set; }
 
         public virtual List<Account> PrimaryAccounts { get; set; }
-        public virtual List<Account> SecondaryAccounts { get; set; }
     }
 }

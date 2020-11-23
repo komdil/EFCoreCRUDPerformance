@@ -2,7 +2,7 @@
 
 namespace EFCoreCRUDPerformance.Model
 {
-    public class Class : ModelItem
+    public class Class : Entity
     {
         public string Name { get; set; }
 
@@ -11,5 +11,7 @@ namespace EFCoreCRUDPerformance.Model
         public virtual List<TeacherClassLink> TeachersCanTechThisClass { get; set; }
 
         public virtual List<Mark> Marks { get; set; }
+
+        public virtual List<ExamTable> InExamLists { get; set; }
     }
 }

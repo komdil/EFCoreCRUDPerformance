@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EFCoreCRUDPerformance.Model
 {
-    public class Mark : ModelItem
+    public class Mark : Entity
     {
         public Guid ClassGuid { get; set; }
         public virtual Class Class { get; set; }
