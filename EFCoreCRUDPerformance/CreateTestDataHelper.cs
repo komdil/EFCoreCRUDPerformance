@@ -6,23 +6,17 @@ namespace EFCoreCRUDPerformance
     public class CreateTestDataHelper
     {
         public ServerContext Context { get; set; }
-        public int AccountantCount = 10;
-        public int BackpackCount = 10;
-        public int StudentCount = 10;
-        public int ExamTableCount = 10;
+        public int AccountantCount = 50;
+        public int BackpackCount = 50;
+        public int StudentCount = 50;
+        public int ExamTableCount = 50;
         public void CreateAccountantTestData()
         {
             for (int i = 0; i < AccountantCount; i++)
             {
                 var cabinetRoom = new Room() { Guid = Guid.NewGuid(), Name = $"ROOM{i}", Floor = i };
 
-                var primaryContact = new Contact()
-                {
-                    Guid = Guid.NewGuid(),
-                    Address = $"Address{i}",
-                    PhoneNumber = $"+99299999999{i}",
-                    Country = $"Country{i}",
-                };
+                var primaryContact = CreateContact(i);
 
                 var accountant = new Accountant()
                 {
@@ -38,7 +32,6 @@ namespace EFCoreCRUDPerformance
                 };
                 Context.Add(accountant);
             }
-            Context.SaveChanges();
         }
 
         public void CreateBackpackTestData()
@@ -61,7 +54,6 @@ namespace EFCoreCRUDPerformance
                 };
                 Context.Add(backpack);
             }
-            Context.SaveChanges();
         }
 
         public void CreateStudentTestData()
@@ -77,7 +69,6 @@ namespace EFCoreCRUDPerformance
 
                 Context.Add(student);
             }
-            Context.SaveChanges();
         }
 
         public void CreateExamTestData()
@@ -93,27 +84,25 @@ namespace EFCoreCRUDPerformance
                 };
                 Context.Add(exam);
             }
-            Context.SaveChanges();
         }
 
         public void CreateTeacherTestData()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 50; i++)
             {
                 var teacher = CreateTeacher(i);
                 Context.Add(teacher);
             }
-            Context.SaveChanges();
         }
 
         public void CreateContactTestData()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 50; i++)
             {
                 var contact = CreateContact(i);
                 Context.Add(contact);
             }
-            Context.SaveChanges();
+            // Context.SaveChanges();
         }
 
         #region Helpers

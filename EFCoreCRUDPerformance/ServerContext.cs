@@ -1,5 +1,6 @@
 ﻿using EFCoreCRUDPerformance.Model;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace EFCoreCRUDPerformance
 {
@@ -15,6 +16,11 @@ namespace EFCoreCRUDPerformance
         {
             optionsBuilder.UseSqlServer($"Server=localhost;Database={dbName};Trusted_Connection=True;MultipleActiveResultSets=true");
             base.OnConfiguring(optionsBuilder);
+        }
+
+        public IQueryable<T> GetEntities<T>() where T : class
+        {
+            return Set<T>();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
